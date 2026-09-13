@@ -44,4 +44,5 @@ The current version focuses on the frontend using React. Users can register, log
 - MongoDB
 - Mongoose
 - REST APIs
-- Backend authentication and authorization
+- JWT (JSON Web Token) authentication
+- Backend authorization
