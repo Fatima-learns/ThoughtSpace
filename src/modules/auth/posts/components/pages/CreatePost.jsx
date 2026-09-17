@@ -1,13 +1,13 @@
 import { useNavigate } from "react-router";
 
-import { useAuth } from "../../../context/AuthContext";
+import { useAuthContext } from "../../../context/AuthContext";
 
 import PostForm from "../PostForm";
 
 
 function CreatePost() {
 
-  const { user } = useAuth();
+  const { user } = useAuthContext();
 
   const navigate = useNavigate();
 

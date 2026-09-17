@@ -1,12 +1,12 @@
 import { Link } from "react-router";
-import { useAuth } from "../../../context/AuthContext";
+import { useAuthContext } from "../../../context/AuthContext";
 import { useEffect, useState } from "react";
 
 
 function Profile() {
 
   const { user } =
-    useAuth();
+    useAuthContext();
 
 
   const [myPosts, setMyPosts] =

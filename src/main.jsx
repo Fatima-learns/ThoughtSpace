@@ -10,7 +10,7 @@ import {
 
 import router from "./app/app.routes";
 
-import AuthProvider from "./modules/auth/context/AuthContext";
+import { AuthProvider } from "./modules/auth/context/AuthContext";
 
 
 createRoot(

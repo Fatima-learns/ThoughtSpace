@@ -4,11 +4,11 @@ import {
   useNavigate,
 } from "react-router";
 
-import { useAuth } from "../modules/auth/context/AuthContext";
+import { useAuthContext } from "../modules/auth/context/AuthContext";
 
 
 function Navbar() {
-  const { user, logout } = useAuth();
+  const { user, logout } = useAuthContext();
 
   const navigate = useNavigate();
 
