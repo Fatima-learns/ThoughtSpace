@@ -2,7 +2,7 @@ import { createBrowserRouter } from "react-router";
 import App from "./App";
 import Home from "../modules/auth/posts/components/pages/Home";
 import Login from "../modules/auth/posts/components/pages/Login";
-import Register from "../modules/auth/pages/register";
+import Register from "../modules/auth/pages/Register";
 import Profile from "../modules/auth/posts/components/pages/Profile";
 import CreatePost from "../modules/auth/posts/components/pages/CreatePost";
 import ProtectedRoute from "../modules/auth/components/ProtectedRoute";
