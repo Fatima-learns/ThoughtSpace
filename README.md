@@ -1,12 +1,16 @@
 # ThoughtSpace
 
-Try. Fail. Learn. Succeed.
+> Try. Fail. Learn. Succeed.
 
 ThoughtSpace is a community-based web application where users can read, share, and manage thoughts, experiences, advice, lessons, opinions, questions, and motivation.
 
-The frontend is built with React and focuses on user interaction, navigation, authentication state, protected pages, and communication with the backend API.
+The frontend is built with React and provides user interaction, navigation, authentication state management, protected pages, and communication with the backend API.
 
-## Features
+## 🚀 Live Demo
+
+[Visit ThoughtSpace](YOUR_VERCEL_URL)
+
+## ✨ Features
 
 - User registration and login
 - Authentication state management
@@ -16,9 +20,11 @@ The frontend is built with React and focuses on user interaction, navigation, au
 - Public access to shared content
 - Responsive user interface
 - API communication using Axios
-- Authentication persistence using refresh tokens
+- Refresh-token based authentication persistence
 
-## Tech Stack
+## 🛠️ Tech Stack
+
+### Frontend
 
 - React.js
 - JavaScript
@@ -28,3 +34,12 @@ The frontend is built with React and focuses on user interaction, navigation, au
 - Context API
 - Axios
 
+### Backend
+
+- Node.js
+- Express.js
+- MongoDB
+- Mongoose
+- JWT
+- bcryptjs
+- Cookie-based refresh tokens
