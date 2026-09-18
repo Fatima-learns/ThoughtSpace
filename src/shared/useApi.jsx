@@ -6,7 +6,7 @@ export default function useApi(){
     const authContext = useAuthContext()
 
     const api = axios.create({
-        baseURL: "http://localhost:5173/api",
+        baseURL: `${import.meta.env.VITE_API_URL}/api`,
         withCredentials: true
     })
 
@@ -22,7 +22,11 @@ export default function useApi(){
     api.interceptors.response.use(response => response,
         async(error) => {
             if(error.response && error.response.status === 401){
-                const res = await axios.post("/api/auth/refresh")
+                const res = await axios.post(
+                    `${import.meta.env.VITE_API_URL}/api/auth/refresh`,
+                    {},
+                    { withCredentials: true }
+                );
                 authContext.setAccessToken(res.data.accessToken)
                 error.config.headers.Authorization = `Bearer ${res.data.accessToken}`
                 return axios(error.config)
