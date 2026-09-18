@@ -8,7 +8,7 @@ The frontend is built with React and provides user interaction, navigation, auth
 
 ## 🚀 Live Demo
 
-[Visit ThoughtSpace](https://thought-space-9l5e2wx9r-fatima-learns-projects.vercel.app/)
+[Visit ThoughtSpace](https://thought-space-git-main-fatima-learns-projects.vercel.app/)
 
 ## ✨ Features
 
